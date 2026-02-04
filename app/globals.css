@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #1a3a52;
+  --accent: #d4a574;
+  --text: #333;
+  --light-bg: #f9f7f4;
+  --border: #e0d5c7;
+  --white: #ffffff;
+}
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-accent: var(--accent);
+  --color-text: var(--text);
+  --font-sans: 'Poppins', system-ui, sans-serif;
+  --font-serif: 'Merriweather', serif;
+}
+
+body {
+  background: var(--white);
+  color: var(--text);
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+}
+
+.container-custom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.card-shadow {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card-shadow:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  color: var(--primary);
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+.disclaimer-box {
+  background-color: #fffbeb;
+  border-left: 4px solid #fbbf24;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.disclaimer-box strong {
+  color: #92400e;
+}
